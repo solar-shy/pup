@@ -7,7 +7,9 @@ a = (255, 255, 255)
 b = (255, 255, 0)
 BLACK = (0, 0, 0)
 BLUE = (0, 0, 255)
-
+rect_1_color = (255, 0, 255)
+rect_1_rect = ((10, 10), (100, 100))
+rect_1_width = 4
 
 pygame.init()
 screen = pygame.display.set_mode((W, H))
@@ -26,6 +28,7 @@ text = font.render("Всем привет", True, a)
 screen.blit(text, (100, 200))
 text = font2.render("задание на урок", True, b)
 screen.blit(text, (215, 350))
+pygame.draw.rect(screen, rect_1_color, rect_1_width)
 
 
 run = True
